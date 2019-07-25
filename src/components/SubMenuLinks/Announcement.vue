@@ -4,7 +4,7 @@
           v-for="(b, idx) in this.$store.state.announcements" 
           v-bind:key="idx">
           <!-- <iframe v-bind:id="mdNames[idx]" v-bind:src="domain+'/announcements/'+b" style="display:none;"></iframe> -->
-          <div v-bind:id="mdNames[idx]" v-bind:src="domain+'/announcements/'+b" style="display:none;"></div>
+          <div v-bind:id="mdNames[idx]" v-bind:src="domain+'/docs/announcements/'+b" style="display:none;"></div>
         </div>
       
         <b-container class="announcementRow">
