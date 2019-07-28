@@ -38,17 +38,6 @@ export default {
   display: grid;
   grid-template-rows: 0fr 0fr 0fr 5fr;
 }
-.submenu-content-div {
-  width: 60%;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  margin: 0 auto;
-  padding-top: 10px; 
-  border-top: lightgray 3px solid;
-}
-#sub-menu {
-  margin-right: 20px;
-}
 #sub-menu li {
     list-style-type: none;
     margin-top: 2px;
@@ -71,5 +60,30 @@ export default {
 
 .dropdown:hover .dropdown-menu {
     display: block;
+}
+
+@media screen and (min-width: 0px) and (max-width: 420px) {
+    .nav-main {
+        display: inline;
+        justify-content: unset !important;
+    }
+
+    .dropdown-item {
+        white-space: normal!important;
+    }
+}
+
+@media screen and (min-width: 420px) {
+    .submenu-content-div {
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        margin: 0 auto;
+        padding-top: 10px; 
+        border-top: lightgray 3px solid;
+    }
+    #sub-menu {
+        margin-right: 20px;
+    }
 }
 </style>

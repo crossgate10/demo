@@ -64,10 +64,10 @@ export default {
     },
     methods:{
         home(){
-            
+            console.log("home")
         },
         place(){
-            
+            console.log("place")
         }
   }
 }

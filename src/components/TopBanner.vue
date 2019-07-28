@@ -13,4 +13,15 @@ export default {
 .top-banner-div{
     background-color:beige;
 }
+
+@media screen and (min-width: 0px) and (max-width: 420px) {
+    .top-banner-div {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 420px) {
+    
+}
+
 </style>

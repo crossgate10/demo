@@ -1,7 +1,9 @@
 module.exports = {
     devServer: {
-        host: 'https://crossgate10.github.io/demo',
-        port: 80,
+        // host: 'https://crossgate10.github.io/demo',
+        host: 'localhost',
+        // port: 80,
+        port: 8082,
     },
     // publicPath: './',
     publicPath: './',
