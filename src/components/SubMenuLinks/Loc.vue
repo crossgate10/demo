@@ -15,6 +15,9 @@ import Vue from 'vue'
 Vue.use(Viewer)
 
 export default {
+    components: {
+        
+    }
 }
 </script>
 

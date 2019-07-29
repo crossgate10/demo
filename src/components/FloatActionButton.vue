@@ -4,6 +4,7 @@
         :position="position"
         :actions="fabActions"
         :bg-color="bgColor"
+        :icon-size="small"
         :main-icon="mainIcon"
         :fixed-tooltip="true"
         :enable-rotation="false"
@@ -81,6 +82,33 @@ export default {
 .close {
     transform: rotate(315deg);
 }
+
+@media screen and (max-width: 320px) {
+    .fab-main {
+        padding: 20px!important;
+    }
+    #top-right-wrapper {
+        top: 2%!important;
+        right: 3%!important;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 420px) {
+    .fab-main {
+        padding: 20px!important;
+    }
+    #top-right-wrapper {
+        top: 2%!important;
+        right: 3%!important;
+    }
+}
+
+@media screen and (min-width: 421px) {
+    .fab-main {
+        padding: 30px!important;
+    }
+}
+
 </style>
 
 

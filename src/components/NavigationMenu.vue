@@ -35,7 +35,7 @@
         <b-navbar class="mobile-navigation-bar" size="md" toggleable>
             <b-navbar-toggle class="collapse-toggle-div" target="nav-menu-collapse" left>
                 <span class="navbar-toggler-icon"></span>
-                <div class="school-name-div">國立高雄海洋科技大學 ＸＸＸＸＸＸ系</div>
+                <div class="school-name-div">國立高雄海洋科技大學<br class="break-line"/>ＸＸＸＸＸＸ系</div>
             </b-navbar-toggle>
 
             <b-collapse id="nav-menu-collapse" is-nav>
@@ -112,6 +112,9 @@ export default {
     display: grid;
     justify-content: center;
 }
+.break-line {
+    display: none;
+}
 
 @media screen and (max-width: 320px) {
     .pc-navigation-bar {
@@ -122,13 +125,22 @@ export default {
         display: flex;
     }
 
+    .collapse-toggle-div {
+        width: 100%;
+    }
+
     .school-name-div {
         white-space: normal;
         font-size: 0.9rem;
+        margin-left: 20%;
     }
 
     .dropdown li {
         text-align: center;
+    }
+
+    .break-line {
+       display: inline;
     }
 }
 

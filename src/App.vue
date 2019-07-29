@@ -73,7 +73,7 @@ export default {
     }
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 420px) and (orientation: portrait) {
     .submenu-content-div {
         width: 60%;
         display: grid;
