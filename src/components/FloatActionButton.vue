@@ -4,7 +4,6 @@
         :position="position"
         :actions="fabActions"
         :bg-color="bgColor"
-        :icon-size="small"
         :main-icon="mainIcon"
         :fixed-tooltip="true"
         :enable-rotation="false"
